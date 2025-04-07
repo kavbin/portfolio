@@ -20,7 +20,7 @@
 @keyframes backgroundGrow{
     from{
         transform: scale(5);
-        filter: blur(5px) brightness(30%);
+        filter: blur(7px) brightness(15%);
     }
     to{
         transform: scale(1.05);
@@ -51,7 +51,7 @@ body{
     filter: blur(3px) brightness(100%);
     animation: backgroundGrow reverse;
     animation-timeline: view();
-    animation-range: 100vh 150vh;
+    animation-range: 100vh 230vh;
     transition: animation 0.5s ease;
 }
 
