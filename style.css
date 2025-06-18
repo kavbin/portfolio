@@ -132,7 +132,7 @@ body{
 
 .description{
     width: 80vw;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10vw;
@@ -200,7 +200,7 @@ body{
         align-items: center;
         justify-items: center;
         text-align: center;
-        color: white;
+        color: rgb(255, 255, 255);
         text-shadow: 1px 1px 5px black;
         h1{
             font-size: 6vw;
@@ -328,15 +328,18 @@ body{
     display: block;
     width: 70vw;
     height: auto;
-    margin-top: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 0vw;
     margin-bottom: 5vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: var(--smallFont);
-    color: white;
-    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    font-size: 2.2vw;
     text-shadow: 1px 1px 3px black;
+    background-color: var(--lighterColor);
 }
 
 #lightbox .lightboxSpacer{
