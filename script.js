@@ -9,7 +9,7 @@ images.forEach(triggerCont => {
         while(lightbox.firstChild){
             lightbox.removeChild(lightbox.firstChild)
         }
-        lightbox.scrollTop = 0
+        lightbox.scrollTop = 20
         const originalCaptionedImages = triggerCont.querySelectorAll('.captionedImage')
         originalCaptionedImages.forEach(originalCaptionedImage => {
             const content = originalCaptionedImage.querySelector('img, video')
@@ -25,9 +25,17 @@ images.forEach(triggerCont => {
                 video.muted = false
                 lightbox.appendChild(video)
             }
-            const p = document.createElement('p')
+            let link = document.createElement('a')
+            let p = document.createElement('p')
             p.textContent = originalCaptionedImage.querySelector('p').textContent
-            lightbox.appendChild(p)
+            if(originalCaptionedImage.querySelector('h1')){
+                link.href = originalCaptionedImage.querySelector('h1').textContent
+            }
+            link.appendChild(p)
+            lightbox.appendChild(link)
+            
+            
+            
         })
         const spacer = document.createElement('div')
         spacer.className = 'lightboxSpacer'
