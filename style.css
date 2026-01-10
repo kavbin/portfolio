@@ -303,7 +303,6 @@ body{
 }
 
 #lightbox img{
-    outline: red 3px solid;
     display: grid;
     height: 75vw;
     max-width: 90vw;
