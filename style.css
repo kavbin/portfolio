@@ -1,10 +1,10 @@
 :root{
     --bigFont: Large, sans-serif;
     --smallFont: Small, sans-serif;
-    --backgroundColor: hsl(258, 42%, 5%);
+    --backgroundColor: hsl(284, 44%, 5%);
     --lighterColor: hsl(258, 33%, 14%);
     --highlightColor: hsl(258, 23%, 34%);
-    --scaleRatio: 80vw;
+    --scaleRatio: 40vw;
 }
 
 @font-face {
@@ -83,7 +83,7 @@ body{
 
     h1{
         height: 16vw;
-        font-size: 18vw;
+        font-size: 19vw;
         display: inline-block;
         line-height: 16vw;
         text-shadow: rgb(0, 0, 0) 1px 1px 10px;
@@ -131,12 +131,12 @@ body{
 }
 
 .description{
-    width: 80vw;
+    width: 60vw;
     color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: var(--smallFont);
 }
 
@@ -166,7 +166,7 @@ body{
     animation: imageTransitionIn, imageTransitionOut;
     animation-direction: forwards, reverse;
     animation-timeline: view();
-    animation-range: -5% 30%, 70% 105%;
+    animation-range: -5% 25%, 75% 105%;
     animation-timing-function: ease-in-out;
     transition: transform 2s ease;
     margin-bottom: 5vw;
@@ -204,14 +204,14 @@ body{
         color: rgb(255, 255, 255);
         text-shadow: 1px 1px 5px black;
         h1{
-            font-size: 6vw;
+            font-size: 5vw;
             margin-bottom: 0px;
             padding-left: 2vw;
             padding-right: 2vw;
             font-family: var(--bigFont);
         }
         h2{
-            font-size: 3vw;
+            font-size: 2.5vw;
             margin-top: 0px;
             font-style: italic;
             padding-left: 2vw;
@@ -247,19 +247,19 @@ body{
     
     .displayImage{
         height: 30vw;
-        width: 70vw;
+        width: 60vw;
         display: flex;
         .imageContainer{
             .captionedImage{
                 display: inline-block;
-                width: 35vw;
+                width: 30vw;
                 height: 30vw;
             } 
         }
         .textContainer{
-            max-width: 35vw;
+            max-width: 30vw;
             height: 30vw;
-            width: 35vw;
+            width: 30vw;
             display: grid;
             align-items: center;
             justify-items: center;
@@ -303,21 +303,25 @@ body{
 }
 
 #lightbox img{
-    display: block;
-    width: 70vw;
-    height: auto;
+    outline: red 3px solid;
+    display: grid;
+    height: 75vw;
+    max-width: 90vw;
+    max-height: 75vh;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 1px 1px 10px black;
+    object-fit: cover;
 }
 
 #lightbox video{
     display: block;
-    width: 70vw;
-    height: auto;
+    max-width: 90vw;
+    max-height: 70vh;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 1px 1px 10px black;
+    object-fit: fill;
 }
 
 #lightbox 
@@ -325,7 +329,7 @@ body{
         outline: red 10px solid;
     p{
     display: block;
-    width: 70vw;
+    width: 50vw;
     height: auto;
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -336,9 +340,9 @@ body{
     text-align: center;
     font-family: var(--smallFont);
     color: rgb(255, 255, 255);
-    font-size: 2.2vw;
+    font-size: 1.6vw;
     text-shadow: 1px 1px 3px black;
-    background-color: var(--lighterColor);
+    
     }
 }
 
@@ -376,6 +380,6 @@ body{
     p{
         color: white;
         font-family: var(--smallFont);
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 }
