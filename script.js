@@ -21,8 +21,9 @@ images.forEach(triggerCont => {
             else {
                 const video = document.createElement('video')
                 video.src = content.src
-                video.controls = true
-                video.muted = false
+                video.controls = false
+                video.muted = true
+                video.autoplay = true
                 lightbox.appendChild(video)
             }
             let link = document.createElement('a')

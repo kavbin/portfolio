@@ -1,7 +1,7 @@
 :root{
     --bigFont: Large, sans-serif;
     --smallFont: Small, sans-serif;
-    --backgroundColor: hsl(284, 44%, 5%);
+    --backgroundColor: hsl(278, 44%, 5%);
     --lighterColor: hsl(258, 33%, 14%);
     --highlightColor: hsl(258, 23%, 34%);
     --scaleRatio: 40vw;
@@ -40,7 +40,7 @@ body{
 .pageHeaderImage{
     position: fixed;
     z-index: -2;
-    background-image: url(images/hd1/IMG_5642.jpg);
+    background-image: url(images/loading\ img.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -49,11 +49,15 @@ body{
     max-height: 70vw;
     min-height: 70vw;
     transform: scale(1.05);
-    filter: blur(3px) brightness(100%);
-    animation: backgroundGrow reverse;
+    filter: blur(0px) brightness(100%);
+    /*animation: backgroundGrow reverse;*/
     animation-timeline: view();
     animation-range: 100vh 230vh;
     transition: animation 0.5s ease;
+    video{
+        margin-top: -10vw;
+        height: 70vw;
+    }
 }
 
 @keyframes textSlideIn{
@@ -86,7 +90,7 @@ body{
         font-size: 19vw;
         display: inline-block;
         line-height: 16vw;
-        text-shadow: rgb(0, 0, 0) 1px 1px 10px;
+        text-shadow: rgb(0, 0, 0) 3px 3px 10px;
         font-family: var(--bigFont);
     }
     h2{
