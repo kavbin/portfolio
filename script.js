@@ -31,6 +31,7 @@ images.forEach(triggerCont => {
             p.textContent = originalCaptionedImage.querySelector('p').textContent
             if(originalCaptionedImage.querySelector('h1')){
                 link.href = originalCaptionedImage.querySelector('h1').textContent
+                link.target = "_blank"
             }
             link.appendChild(p)
             lightbox.appendChild(link)
